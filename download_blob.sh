@@ -17,7 +17,7 @@ while IFS= read -r line; do
 
 
     url="${line//$'\r'/}"
-    echo "URL after removing carriage return: $url==="
+    echo "URL after removing carriage return: $url<-"
 
     #extract repo name
     REPO=$(echo $url | cut -d '/' -f5) 
